@@ -4,7 +4,7 @@ angular.module('myApp', ['ngRoute', 'myApp.controllers', 'myApp.directives'])
   $routeProvider
   .when('/',
     {
-      controller: 'ssd',
+      controller: 'MainController',
       templateUrl: '/templates/home.html'
     })
   .otherwise({ redirectTo: '/' });

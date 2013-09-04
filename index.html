@@ -20,8 +20,9 @@
     <button ng-click="fetchArticles()">Fetch articles</button>
 
     <ul> 
-      <li ng-repeat="article in articles"></li>
-      <div my-article ng-model="article"></div>
+      <li ng-repeat="article in articles">
+        <div my-article ng-model="article"></div>
+      </li>
     </ul>
 
   </div>
