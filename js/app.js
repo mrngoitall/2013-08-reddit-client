@@ -1,5 +1,5 @@
 angular.module('myApp', ['ngRoute', 'myApp.controllers', 'myApp.directives'])
-.config(function ($routeProvider) {
+.config(['$routeProvider',function ($routeProvider) {
   // Setup our routes here
   $routeProvider
   .when('/',
@@ -8,4 +8,4 @@ angular.module('myApp', ['ngRoute', 'myApp.controllers', 'myApp.directives'])
       templateUrl: '/templates/home.html'
     })
   .otherwise({ redirectTo: '/' });
-});
+}]);
