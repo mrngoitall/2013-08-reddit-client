@@ -2,7 +2,7 @@
 <!-- Bootstrap our AngularJS app and setup -->
 <html ng-app="myApp">
 <head>
-  <title>my Angular App</title>
+  <title>my Angular Reddit App</title>
 </head>
 <body ng-module="myApp.controllers">
 
@@ -17,7 +17,6 @@
   <script type="text/javascript" src="js/filters.js"></script>
 
   <div ng-controller="MainController">
-    <button ng-click="fetchArticles()">Fetch articles</button>
 
     <ul> 
       <li ng-repeat="article in articles">
