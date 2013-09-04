@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!-- Bootstrap our AngularJS app and setup -->
-<html>
+<html ng-app="myApp">
 <head>
   <title>my Angular App</title>
 </head>
-<body>
+<body ng-module="myApp.controllers">
 
 <h1>Hi</h1>
 
@@ -15,5 +15,16 @@
   <script type="text/javascript" src="js/services.js"></script>
   <script type="text/javascript" src="js/directives.js"></script>
   <script type="text/javascript" src="js/filters.js"></script>
+
+  <div ng-controller="MainController">
+    <button ng-click="fetchArticles()">Fetch articles</button>
+
+    <ul> 
+      <li ng-repeat="article in articles"></li>
+      <div my-article ng-model="article"></div>
+    </ul>
+
+  </div>
+
 </body>
 </html>
