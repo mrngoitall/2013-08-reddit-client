@@ -7,10 +7,5 @@ angular.module('myApp', ['ngRoute', 'myApp.controllers', 'myApp.directives'])
       controller: 'MainController',
       templateUrl: '../templates/home.html'
     })
-  .when('/test',
-    {
-      controller: 'MainController',
-      template: 'Rerouting works'
-    })
   .otherwise({ redirectTo: '/' });
 });
