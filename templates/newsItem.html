@@ -10,6 +10,6 @@
       <button class="btn btn-xs btn-success" ng-click="upvoteArticle(ngModel)">awesome!</button>
       <button class="btn btn-xs btn-info" ng-click="unvoteArticle(ngModel)">meh</button>
       <button class="btn btn-xs btn-danger" ng-click="downvoteArticle(ngModel)">booo-urns!</button>
-      <br />{{ ngModel.num_comments }} comments
+      <br /><a href="http://reddit.com{{ ngModel.permalink }}">{{ ngModel.num_comments }} comments</a>
     </div>
 </div>
