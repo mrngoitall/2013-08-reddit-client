@@ -2,12 +2,12 @@
 
 <!-- Fill in our news data here -->
 
-  <div ng-controller="MainController">
+<div>
 
-    <ul> 
-      <li ng-repeat="article in articles | orderBy:data.score:reverse ">
-        <div my-article ng-model="article"></div> 
-      </li>
-    </ul>
+<ul> 
+  <li ng-repeat="article in articles | orderBy:'data.score':true ">
+    <div my-article ng-model="article"></div> 
+  </li>
+</ul>
 
-  </div>
+</div>
