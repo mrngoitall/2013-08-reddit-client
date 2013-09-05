@@ -1,9 +1,15 @@
-<a href="{{ ngModel.url }}">
-<h4>{{ ngModel.title }}</h4>
-<img ng-src="{{ ngModel.thumbnail }}" /></a><br />
-Score: {{ ngModel.score }} <br />
 <!-- {{ ngModel.ups }} up, {{ ngModel.downs }} down <br /> -->
-<button ng-click="upvoteArticle(ngModel)">awesome!</button>
-<button ng-click="unvoteArticle(ngModel)">meh</button>
-<button ng-click="downvoteArticle(ngModel)">booo-urns!</button>
-{{ ngModel.num_comments }} comments
+
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <a href="{{ ngModel.url }}"><img ng-src="{{ ngModel.thumbnail }}" /><h3 class="panel-title">{{ ngModel.title }}</h3> - Score: {{ ngModel.score }}</a>
+    </div>
+    <div class="panel-body">
+      <button class="btn btn-xs btn-success" ng-click="upvoteArticle(ngModel)">awesome!</button>
+      <button class="btn btn-xs btn-info" ng-click="unvoteArticle(ngModel)">meh</button>
+      <button class="btn btn-xs btn-danger" ng-click="downvoteArticle(ngModel)">booo-urns!</button>
+      <br />{{ ngModel.num_comments }} comments
+    </div>
+</div>

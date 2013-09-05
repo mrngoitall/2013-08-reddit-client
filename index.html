@@ -3,18 +3,39 @@
 <html ng-app="myApp">
 <head>
   <title>my Angular Reddit App</title>
+  <link href="js/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
 <body ng-module="myApp.controllers">
 
-<h1>Hi</h1>
+<h1>Reddit hot (not chili peppers)</h1>
 
   <script type="text/javascript" src="js/vendor/angular/angular.js"></script>
   <script type="text/javascript" src="js/vendor/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap/dist/js/bootstrap-min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <script type="text/javascript" src="js/controllers.js"></script>
   <script type="text/javascript" src="js/services.js"></script>
   <script type="text/javascript" src="js/directives.js"></script>
   <script type="text/javascript" src="js/filters.js"></script>
+
+  <div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Reddit Client</a>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/#">Home</a></li>
+              <li><a href="/#/login">Log in</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
 
   <div ng-view> 
   </div>

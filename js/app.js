@@ -7,5 +7,10 @@ angular.module('myApp', ['ngRoute', 'myApp.controllers', 'myApp.directives'])
       controller: 'MainController',
       templateUrl: '../templates/home.html'
     })
+  .when('/login',
+    {
+      controller: 'MainController',
+      templateUrl: '../templates/login.html'
+    })
   .otherwise({ redirectTo: '/' });
 });
