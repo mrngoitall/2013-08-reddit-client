@@ -25,7 +25,9 @@
     "grunt-concurrent": "~0.3.1",
     "grunt-nodemon": "~0.1.0",
     "connect": "~2.8.8",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-connect-proxy": "0.1.5",
+    "grunt-contrib-connect": "~0.4.1"
   },
   "dependencies": {
     "karma-script-launcher": "~0.1.0",
