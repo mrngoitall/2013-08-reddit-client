@@ -4,7 +4,7 @@ angular.module('myApp.services', [])
         getArticles: function($scope) {
           $http({
             method: 'JSONP',
-            url: 'http://www.reddit.com/hot.json?jsonp=JSON_CALLBACK'
+            url: 'http://www.reddit.com/r/hot.json?jsonp=JSON_CALLBACK'
           }).success(function(data, status, headers, config) {
             // data contains the response
             // status is the HTTP status

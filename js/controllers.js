@@ -71,4 +71,8 @@ angular.module('myApp.controllers',['myApp.services'])
       });
     };
 
+    $scope.isNotNSFW = function(ngModel) {
+      return ngModel.thumbnail !== "nsfw";
+    };
+
 }]);

@@ -2,7 +2,8 @@
 
 <div class="panel panel-default">
     <div class="panel-heading">
-      <a href="{{ ngModel.url }}"><img ng-src="{{ ngModel.thumbnail }}" /><h3 class="panel-title">{{ ngModel.title }}</h3> - Score: {{ ngModel.score }}</a>
+      <span class="panel-title">{{ ngModel.score }}</span>
+      <a href="{{ ngModel.url }}"><img ng-src="{{ ngModel.thumbnail }}" /><h3 class="panel-title">{{ ngModel.title }}</h3></a>
     </div>
     <div class="panel-body">
       <button class="btn btn-xs btn-success" ng-click="upvoteArticle(ngModel)">awesome!</button>

@@ -2,12 +2,6 @@
 
 <!-- Fill in our news data here -->
 
-<div>
-
-<ul> 
-  <li ng-repeat="article in articles | orderBy:'data.score':true ">
-    <div my-article ng-model="article"></div> 
-  </li>
-</ul>
-
+<div ng-repeat="article in articles | sfw | orderBy:'data.score':true">
+  <div my-article ng-model="article"></div> 
 </div>
