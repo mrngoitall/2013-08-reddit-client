@@ -5,7 +5,8 @@ angular.module('myApp.controllers',['myApp.services'])
     // including mine for now, until we get logins to work.
     var modhash = 'e1az0eqvdcfaa9090449b8057f6b53e14ebb91b7554ee9d24a';
 
-    RedditService.getArticles($scope);
+    var articles = [];
+    $scope.articles = RedditService.getArticles();
 
     $http({
         method: 'JSONP',
