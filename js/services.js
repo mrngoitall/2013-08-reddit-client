@@ -1,4 +1,8 @@
 angular.module('myApp.services', [])
+.factory('SessionService', ['serverRoute', 
+  function(serverRoute) {
+    
+}])
 .factory('RedditService', ['$http', '$q', function($http, $q) {
     return {
         getArticles: function() {
