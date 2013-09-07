@@ -22,24 +22,6 @@ angular.module('myApp.controllers',['myApp.services'])
         console.log('error with me.json',data);
       });
 
-    $scope.login = function(ngModel) {
-      console.log('running login process');
-      console.log(ngModel);
-
-      $http({
-        method: 'POST',
-        url: '/api/vote',
-        data: {
-          id: ngModel.username,
-          uh: modhash
-        }
-      }).success(function(data, status, headers, config) {
-        console.log('success',data.data.children);
-      }).error(function(data, status, headers, config) {
-        console.log('error',data);
-      });
-    };
-
     $scope.upvoteArticle = function(ngModel) {
       $http({
         method: 'POST',
@@ -92,6 +74,28 @@ angular.module('myApp.controllers',['myApp.services'])
 
     $scope.isNotNSFW = function(ngModel) {
       return ngModel.thumbnail !== "nsfw";
+    };
+
+}])
+.controller('LoginController',
+  ['$scope','$http', function($scope, $http) {
+
+    $scope.login = function(ngModel) {
+      console.log('running login process');
+      console.log(ngModel);
+
+      $http({
+        method: 'POST',
+        url: '/api/vote',
+        data: {
+          id: ngModel.username,
+          uh: modhash
+        }
+      }).success(function(data, status, headers, config) {
+        console.log('success',data.data.children);
+      }).error(function(data, status, headers, config) {
+        console.log('error',data);
+      });
     };
 
 }]);
